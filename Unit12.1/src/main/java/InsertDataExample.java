@@ -9,7 +9,7 @@ public class InsertDataExample {
         try {
             connection = DriverManager.getConnection("jdbc:oracle:thin:@27.118.22.14:1521:orcl","SCOTT","SCOTT");
             statement = connection.createStatement();
-            statement.execute("insert into student_kb(st_id,st_name, st_age) values(0,'Kiên', 22) ");
+            statement.execute("insert into student_kb(st_id,st_name, st_age) values(1,'Kiên 1', 22) ");
             statement.close();
             connection.close();
         }catch (Exception e) {

@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba358801-6a91-4b05-b345-7849d334b7b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InsertDataExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JdbcFirstExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SelectDataExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UpdateDataExample.java" afterDir="false" />
-    </list>
+    <list default="true" id="ba358801-6a91-4b05-b345-7849d334b7b4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,7 +41,14 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.UpdateDataExample">
+  <component name="RunManager" selected="Application.BatchProcessingExample">
+    <configuration name="BatchProcessingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BatchProcessingExample" />
+      <module name="Unit12.1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InsertDataExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="InsertDataExample" />
       <module name="Unit12.1" />
@@ -60,15 +56,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcFirstExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JdbcFirstExample" />
+    <configuration name="SelectDataExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SelectDataExample" />
       <module name="Unit12.1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectDataExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SelectDataExample" />
+    <configuration name="TransactionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TransactionExample" />
       <module name="Unit12.1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -83,10 +79,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BatchProcessingExample" />
+        <item itemvalue="Application.TransactionExample" />
+        <item itemvalue="Application.InsertDataExample" />
         <item itemvalue="Application.UpdateDataExample" />
         <item itemvalue="Application.SelectDataExample" />
-        <item itemvalue="Application.InsertDataExample" />
-        <item itemvalue="Application.JdbcFirstExample" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +97,7 @@
       <updated>1661153635635</updated>
       <workItem from="1661153637139" duration="1267000" />
       <workItem from="1661155098094" duration="8492000" />
+      <workItem from="1661237230312" duration="4551000" />
     </task>
     <servers />
   </component>
@@ -116,5 +114,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TransactionExample.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BatchProcessingExample.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
