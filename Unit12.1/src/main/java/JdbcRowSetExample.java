@@ -15,20 +15,20 @@ public class JdbcRowSetExample {
         jdbcRs.setUrl("jdbc:oracle:thin:@27.118.22.14:1521:orcl");
         jdbcRs.setUsername("SCOTT");
         jdbcRs.setPassword("SCOTT");
-        jdbcRs.setCommand("select * from danhvinh_student");
+        jdbcRs.setCommand("select * from student_kb");
         jdbcRs.execute();
-        while (jdbcRs.next()){
-            System.out.println(jdbcRs.getInt(1)+"\t"+jdbcRs.getString("name"));
+        while (jdbcRs.next()) {
+            System.out.println(jdbcRs.getInt(1) + "\t" + jdbcRs.getString("name"));
         }
-//        jdbcRs.first();
-//        jdbcRs.updateString("name","Hoang Van X");
-//        jdbcRs.commit();
+        // jdbcRs.first();
+        // jdbcRs.updateString("name","Hoang Van X");
+        // jdbcRs.commit();
 
         jdbcRs.first();
-        System.out.println(jdbcRs.getString("id")+"\t"+jdbcRs.getString(3));
+        System.out.println(jdbcRs.getString("id") + "\t" + jdbcRs.getString(3));
 
         jdbcRs.absolute(8);
-        System.out.println(jdbcRs.getString("name") +" : "+jdbcRs.getString(3));
+        System.out.println(jdbcRs.getString("name") + " : " + jdbcRs.getString(3));
         jdbcRs.close();
     }
 }
