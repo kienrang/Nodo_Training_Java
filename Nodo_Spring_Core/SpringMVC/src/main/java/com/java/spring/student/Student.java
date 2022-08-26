@@ -8,7 +8,7 @@ import javax.validation.constraints.Size;
 public class Student {
     private int id;
     @NotBlank
-    @Size(min = 2, max = 100)
+    @Size(min = 3, max = 100)
     private String name;
 
     @Range(min = 1, max = 150)
