@@ -1,6 +1,8 @@
 package com.java.spring.controller;
 
+import com.java.spring.dao.StudentDAO;
 import com.java.spring.student.Student;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -13,6 +15,10 @@ import javax.validation.Valid;
 
 @Controller
 public class StudentControllelr {
+
+    @Autowired
+    private StudentDAO studentDAO;
+
     @RequestMapping(value ="student/add", method = RequestMethod.GET)
     public ModelAndView add(@ModelAttribute Student student) {
         ModelAndView mv = new ModelAndView();
@@ -21,19 +27,18 @@ public class StudentControllelr {
     }
     @RequestMapping(method = RequestMethod.POST, value = "student/save")
     public ModelAndView save(@Valid @ModelAttribute("command") Student student, BindingResult result) {
-        ModelAndView mv;
-        if(result.hasErrors()) {
-            mv = new ModelAndView("student_form", "command", "student");
-            mv.addObject("errors", result);
-            return mv;
-        }
-        mv = new ModelAndView();
-        Student st = new Student();
-        st.setId(0);
-        st.setName(student.getName());
-        st.setAge(student.getAge());
-        mv.addObject("student", st);
-        mv.setViewName("/students/student_view");
+
+        ModelAndView mv = new ModelAndView();
+
+
+       return mv;
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "student/show")
+    public ModelAndView show() {
+        ModelAndView mv = new ModelAndView();
+        mv.addObject("lsSt", this.studentDAO.getAll());
+        mv.setViewName("/students/student_list");
         return mv;
     }
 }

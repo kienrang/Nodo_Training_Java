@@ -1,0 +1,13 @@
+package com.java.spring_service.unit10;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Unit10Application {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Unit10Application.class, args);
+    }
+
+}
